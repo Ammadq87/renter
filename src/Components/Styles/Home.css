@@ -1,0 +1,31 @@
+.search {
+    margin: auto;
+    margin-top: 15;
+    padding-top: 5px;
+    padding-bottom: 15px;
+    display: block;
+}
+
+.search > form {
+    width: 95%;
+    border: transparent;
+    box-shadow: 0px 0px 0px white;
+    margin: auto;
+}
+
+.search > form > .inputs {
+    display: flex;
+    width: 50%;
+    margin: auto;
+}
+
+.search > form > .inputs > input {
+    height: 42px;
+    margin-right: 5px;
+}
+
+.search > form > .search-label {
+    font-size: 25px;
+    color: rgb(50, 50, 50);
+    font-weight: 600;
+}

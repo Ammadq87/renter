@@ -1,0 +1,29 @@
+.navbar-container {
+    height: 75px;
+    border-bottom: 1px solid lightgray;
+}
+
+.profile-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    position: relative;
+    top: 10%;
+    background: wheat;
+}
+
+.post-ad-btn {
+    width: 100px;
+    height: 40px;
+}
+
+ul {
+    display: flex;
+    float: right;
+    margin-right: 7px;
+}
+
+li {
+    list-style: none;
+    margin-right: 30px; 
+}

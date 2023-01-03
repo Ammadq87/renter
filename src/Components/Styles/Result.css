@@ -1,0 +1,100 @@
+.result-container {
+    border: 1px solid lightgray;
+    padding: 5px;
+    margin: auto;
+    display: flex;
+    height: 275px;
+    width: 900px;
+    margin-bottom: 5px;
+}
+
+
+
+.result-container > .image {
+    /* border: 1px solid yellow; */
+    text-align: left;
+    display: block;
+    width: 250px;
+    height: 250px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}
+
+.result-container > .info-card {
+    /* border: 1px solid green; */
+    width: 100%;
+    float: right;
+    height: 250px;
+    /* display: flex; */
+}
+
+.result-container > .info-card > .header {
+    /* border: 1px solid blue; */
+    display: flex;
+}
+
+.result-container > .info-card > .header > .header-title {
+    /* border: 1px solid purple; */
+    width: 100%;
+    text-align: left;
+    padding-left: 15px;
+    position: relative;
+}
+
+.name {
+    font-size: 25px;
+    line-height: 200%;
+    font-weight: 600;
+    color: rgb(77, 77, 77);
+}
+
+.location {
+    color: rgb(97, 97, 97);
+}
+
+
+.result-container > .info-card > .header > .price {
+    /* border: 1px solid salmon; */
+}
+
+.price {
+    font-size: 25px;
+    line-height: 1%;
+    color: green;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+
+.result-container > .info-card > .description {
+    /* border: 1px solid black; */
+    text-align: left;
+    padding-left: 15px;
+    height: 105px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tags {
+    height: 50px;
+    /* border: 1px solid brown; */
+    padding-left: 15px;
+    display: flex;
+    margin-top: 5px;
+    /* position: absolute; */
+    bottom: 0px
+}
+
+.tag {
+    background-color: rgb(216, 216, 216);
+    margin: 5px;
+    border-radius: 10px;
+    color: rgb(97, 97, 97);
+    font-weight: 500;
+    text-align: center;
+    padding: 10px;
+    line-height: 100%;
+}
