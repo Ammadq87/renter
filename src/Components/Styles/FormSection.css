@@ -1,0 +1,23 @@
+.Form {
+    /* border: 2px solid red; */
+    display: block;
+    text-align: left;
+    margin: auto;
+    width: 35%;
+}
+
+.Form > .FormSection {
+    /* border: 1px solid blue; */
+    text-align: left;
+}
+
+.Form > .FormSection > .title {
+    margin-left: 5px;
+    display: flex;
+    line-height: 0%;
+
+}
+
+.Form > .FormSection > .inputs {
+    /* border: 1px solid green; */
+}

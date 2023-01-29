@@ -1,29 +1,88 @@
-.navbar-container {
-    height: 75px;
-    border-bottom: 1px solid lightgray;
-}
-
-.profile-btn {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    position: relative;
-    top: 10%;
-    background: wheat;
-}
-
-.post-ad-btn {
-    width: 100px;
-    height: 40px;
+body {
+    background-color: rgb(26,26,26);
 }
 
 ul {
+    list-style: none;
     display: flex;
-    float: right;
-    margin-right: 7px;
+    color: white;
+    font-size: 1.5em;
+    height: 1.5em;
 }
 
 li {
-    list-style: none;
-    margin-right: 30px; 
+    margin-left: 0.5em;
+}
+
+#icon, li> button {
+    height: 2.5em;
+    width: 2.5em;
+    text-align: center;
+    padding: 0.33em;
+    position: relative;
+    top: -40%;
+    background-color: rgb(40,40,40);
+    font-size: 18px;
+    outline: none;
+    border: transparent;
+    color: white;
+    border-radius: 3px;
+}
+
+#icon:hover{
+    cursor: pointer;
+    background-color: rgb(62,62,62);
+}
+
+.navbar-container {
+    height: 4em;
+    background-color: rgb(40,40,40);
+    box-shadow: 0px 2px 1px rgb(30,30,30);
+    line-height: 1%;
+}
+
+.navbar {
+    width: 60%;
+    margin: auto;
+    line-height: 1%;
+}
+
+.post-ad-btn {
+    position: relative;
+    top: -30%;
+    height: 2em;
+    width: 6em;
+    font-weight: 600;
+    background-color: rgb(62,200,110);
+    color: white;
+    border: 1px solid rgb(62,200,110);
+    box-shadow: 0px 1px 4px lightgray;
+    outline: none;
+    border-radius: 3px;
+}
+
+.profile-btn {
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    position: relative;
+    top: -20%;
+    font-size: 15px;
+    color: white;
+    border: transparent;
+    background-color: lightgray;
+}
+
+.post-ad-btn:hover {
+    box-shadow: 0px 1px 8px lightgray;
+    cursor: pointer;
+}
+
+.logo-container {
+    float: left;
+    color: rgb(255,161,22);
+}
+
+.icon-container {
+    float: right;
 }

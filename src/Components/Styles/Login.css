@@ -1,103 +1,99 @@
+body {
+    color: rgb(54, 53, 55);
+    background-color: rgb(236,239,241);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .login-container {
     margin: auto;
-    width: 52%;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-top: 250px;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
 }
 
-form {
-    border: 1px solid lightgray;
-    padding: 20px;
-    width: 52%;
-    margin: auto;
-    border-radius: 5px;
-    box-shadow: 0px 2px 1px lightgray;
-    /* height: 280px; */
+.login-container > form {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    width: 500px;
+    background-color: white;
+    height: 50%;
+    border-radius: 3px;
+    /* box-shadow: 1px 3px 2px lightgray; */
+
 }
 
-input {
-    display: block;
-    margin: auto;
-    height: 35px;
-    width: 95%;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: 1px solid lightgray;
-    padding-left: 15px;
-    outline: none;
+.login-container > form > .logo > .icon {
+    color: rgb(255,161,22);
+    font-size: 3em;
+    width: 100%;
 }
 
-.title {
-    font-size: 30px;
-    margin: auto;
-    width: 99%;
-    text-align: left;
-    margin-bottom: 15px;
-    margin-top: 15px;
-    font-weight: 600;
-}
-
-
-.btn {
-    margin: auto;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-button {
-    height: 45px;
-    width: 30%;
-    font-size: 15px;
+.login-container > form > .logo > .logo-title {
+    font-size: 2em;
+    display: inline;
     font-weight: 700;
-    background: purple;
-    color: white;
-    border-radius: 5px;
-    border: 1px solid purple;
-    margin-left: 4px;
+}
+
+.login-container > form > input {
+    height: 2.5em;
+    width: 80%;
     outline: none;
+    border: 1px solid rgb(223, 227, 213);
+    border-radius: 3px;
+    padding: 0.5em;
 }
 
-button:hover{
-    background: rgb(171, 1, 171);
-    border: 1px solid rgb(171, 1, 171);
-    cursor: pointer;
-    transition: 200ms;
+.login-container > form > .links {
+    width: 82.5%;
+    margin: auto;
+    display: flex;
 }
 
-.links {
-    display: block;
-    width: 26%;
-    text-align: left;
-    padding-left: 4px;
+.login-container > form > .links > p  {
+    width: 100%;
+    font-size: 0.9em;
 }
 
-.links > p > a {
-    display: block;
+a {
+    color: rgb(54, 53, 55);
     text-decoration: none;
-    font-size: 15px;
-    margin-bottom: 5px;
-    font-weight: 600;
-    color: rgb(86, 86, 255);
 }
 
-.links > p > a:hover {
-    text-decoration: underline;
+
+.login-container > form > .links > .forgot-password {
+    text-align: left;
 }
 
-.register {
-    width: 45%;
+.login-container > form > .links > .register {
+    text-align: right;
 }
 
 .error {
-    float: left;
-    font-size: 12px;
     color: tomato;
-    width: 63%;
+    font-size: 0.75em;
+    height: 1.5em;
+    width: 82.5%;
     margin: auto;
-    font-weight: 600;
-    position: relative;
-    top: 0%;
+    margin-top: 10px;
     text-align: left;
-    padding-left: 5px;
+    font-weight: 500;
+}
+
+.login-container > form > button {
+    height: 3.5em;
+    font-size: 1em;
+    width: 82.5%;
+    font-weight: 6  00;
+    color: white;
+    background-color: rgb(40,40,40);
+    outline: none;
+    border: 1px solid rgb(40,40,40);
+    border-radius: 3px;
+}
+
+.login-container > form > button:hover {
+    cursor: pointer;
+    background-color: rgb(82, 82, 82);
 }

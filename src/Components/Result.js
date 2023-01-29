@@ -8,7 +8,7 @@ export const Result = (props) => {
             <div className='info-card'>
                 <div className='header'>
                     <div className='header-title'>
-                        <a className='name'>{props.result.Name}</a>
+                        <a><p className='name'>{props.result.Name}</p></a>
                         <p className='location'>{props.result.Location}</p>
                     </div>
                     <div className='price'>

@@ -3,6 +3,8 @@ import {useForm} from 'react-hook-form';
 import {yupResolver} from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import { useState } from 'react';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faTruckMoving } from "@fortawesome/free-solid-svg-icons"
 
 export const Login = () => {
     const [containsErrors, _containsErrors] = useState(false);
@@ -27,21 +29,23 @@ export const Login = () => {
 
     return (
         <div className='login-container'>
-            <form onSubmit={handleSubmit(onSubmit)} action='/register' method='get' style={{height: !containsErrors ? '310px' : '280px' }}>
-                <p className='title'>Log in</p>
+            <form onSubmit={handleSubmit(onSubmit)} action='/register' method='get'>
+                <div className='logo'>
+                    <FontAwesomeIcon className='icon' icon={faTruckMoving}/>
+                    <p className='logo-title'>Renter</p>
+                </div>
                 
                 <p className='error'>{errors.username?.message}</p>
                 <input {...register('username')} type='text' placeholder='Username'/>
 
                 <p className='error'>{errors.password?.message}</p>
                 <input {...register('password')} type='password' placeholder='Password'/>
+                
                 <div className='links'>
                     <p className='forgot-password'><a href='*'>Forgot Password?</a></p>
                     <p className='register'><a href='*'>Register</a></p>
                 </div>
-                <div className='btn'>
-                    <button type='submit'>Log In</button>
-                </div>
+                <button type='submit'>Log In</button>
             </form>
 
         </div>
